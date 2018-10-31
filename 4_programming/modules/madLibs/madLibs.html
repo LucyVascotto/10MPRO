@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mad Libs</title>
+    </head>
+    <body>
+        <h1>Welcome to Mad Libs!</h1>
+        <br>
+        <h2>Please enter a word for each of the blanks below to create a custom story</h2>
+        <p>Name: <input id="name"></p>
+        <p>Class at school: <input id="scclass"></p>
+        <p>Profession: <input id="prof"></p>
+        <p>Adjective: <input id="Adject"></p>
+        <p>Place: <input id="place"></p>
+        <p>Length of time: <input id="time"></p>
+        <p>Thing: <input id="thing"></p>
+        <p>Person: <input id="person"></p>
+        <p>Family Member: <input id="fam"></p>
+        <button onclick="myFunction()">Create my story!</button>
+        <script>
+        function myFunction() {
+            var name = document.getElementById("name").value
+            var scclass = document.getElementById("scclass").value
+            var prof = document.getElementById("prof").value
+            var Adject = document.getElementById("Adject").value
+            var place = document.getElementById("place").value
+            var time = document.getElementById("time").value
+            var thing = document.getElementById("thing").value
+            var person = document.getElementById("person").value
+            var fam = document.getElementById("fam").value
+
+            alert("Please Excuse " + name + " from " + scclass + " today. His " + prof + " says he is too " + Adject + " to attend " + place + ". He will return to school in " + time + ". Please send his " + thing + " home with " + person + ", their sister. signed, " + name + "'s " +  fam + ".")
+
+
+        }
+
+        </script>
+    </body>
+
+</html>

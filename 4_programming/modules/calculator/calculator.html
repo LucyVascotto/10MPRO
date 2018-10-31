@@ -1,0 +1,41 @@
+<!DOCTYpE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+
+        <h1> Simple Calculator</h1>
+        <h2><p>+ = Addition<p> <p>- = Subtraction<p> <p>/ = Division<p> <p> * = Multiplication<p></h2>
+            <p>First Numeral:<p> <input id="num1">
+            <p>Second Numeral:<p> <input id="num2">
+            <p>Operation (please use symbols):<p> <input id="operation">
+    <script>
+        function myFunction() {
+            var operation = document.getElementById("operation").value;
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var answ;
+
+          if (operation == "+") {
+            answ = a + b;
+              window.alert(answ);
+          }
+        else if (operation == "-") {
+
+            answ = a - b;
+              alert(answ);
+        }
+        else if (operation == "/") {
+            answ = a / b;
+              alert(answ);
+        }
+         else {
+            answ = a * b;
+              alert(answ);
+        }
+    }
+    </script>
+        <p><button onclick="myFunction()">Calculate</button><p>
+    </body>
+</html>
