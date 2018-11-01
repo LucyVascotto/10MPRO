@@ -6,17 +6,17 @@
     <body>
 
         <h1> Simple Calculator</h1>
-        //Given the Page a title
+        <!--Given the Page a title-->
         <h2><p>+ = Addition<p> <p>- = Subtraction<p> <p>/ = Division<p> <p> * = Multiplication<p></h2>
-        //Explained the operations you can use
+        <!--Explained the operations you can use-->
             <p>First Numeral:<p> <input id="num1">
-        //Created first number input
+        <!--Created first number input-->
             <p>Second Numeral:<p> <input id="num2">
-        //Created second number input
+        <!--Created second number input-->
             <p>Operation (please use symbols):<p> <input id="operation">
-        //Created input for operations
+        <!--Created input for operation-->
         <p><button onclick="myFunction()">Calculate</button><p>
-        //created a button that runs a function
+        <!--created a button that runs a function-->
     <script>
         function myFunction() {
             //creating function for the calculations
@@ -26,31 +26,36 @@
             //taking the inputs from the inputs and assigning them to variables
             var answ;
             //creating variable for answ
-
           if (operation == "+") {
+              //created if statement for when operation if equal to +
             answ = a + b;
-              //created if operation
+              //does the necessary calculation and assigns it to the variable answ
               window.alert(answ);
-              //
+              //alerts the user of the answer if they have used the + operation
           }
         if (operation == "-") {
-
+            //created if statement for when operation if equal to -
             answ = a - b;
-              alert(answ);
+            //does the necessary calculation and assigns it to the variable answ
+            alert(answ);
+            //alerts the user of the answer if they have used the - operation
         }
         if (operation == "/") {
+            //created if statement for when operation if equal to /
             answ = a / b;
-              alert(answ);
+            //does the necessary calculation and assigns it to the variable answ
+            alert(answ);
+            //alerts the user of the answer if they have used the / operation
         }
         if (operation == "*") {
+            //created if statement for when operation if equal to *
             answ = a * b;
-              alert(answ);
-        }
-        else {
-            alert("Not a valid input");
+            //does the necessary calculation and assigns it to the variable answ
+            alert(answ);
+            //alerts the user of the answer if they have used the * operation
         }
 
-    }
+}
     </script>
     </body>
 </html>
