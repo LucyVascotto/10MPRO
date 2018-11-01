@@ -5,20 +5,33 @@
     </head>
     <body>
         <h1>Welcome to Mad Libs!</h1>
+        <!--gave the page a heading-->
         <br>
         <h2>Please enter a word for each of the blanks below to create a custom story</h2>
+        <!--explained what to do-->
         <p>Name: <input id="name"></p>
+        <!--created an input for a name-->
         <p>Class at school: <input id="scclass"></p>
+        <!--created an input for class at school-->        
         <p>Profession: <input id="prof"></p>
+        <!--created an input for profession-->
         <p>Adjective: <input id="Adject"></p>
+        <!--created an input for an adjective-->
         <p>Place: <input id="place"></p>
+        <!--created an input for a place-->
         <p>Length of time: <input id="time"></p>
+        <!--created an input for a length of time-->
         <p>Thing: <input id="thing"></p>
-        <p>Person: <input id="person"></p>
+        <!--created an input for an object-->
+        <p>Name of Person: <input id="person"></p>
+        <!--created an input for a person-->
         <p>Family Member: <input id="fam"></p>
+        <!--created an input for a family member-->
         <button onclick="myFunction()">Create my story!</button>
+        <!--created a button that runs a function-->
         <script>
         function myFunction() {
+            //created the function
             var name = document.getElementById("name").value
             var scclass = document.getElementById("scclass").value
             var prof = document.getElementById("prof").value
@@ -28,9 +41,10 @@
             var thing = document.getElementById("thing").value
             var person = document.getElementById("person").value
             var fam = document.getElementById("fam").value
+            //created variables assigned the inputs taken from the users
 
-            alert("Please Excuse " + name + " from " + scclass + " today. His " + prof + " says he is too " + Adject + " to attend " + place + ". He will return to school in " + time + ". Please send his " + thing + " home with " + person + ", their sister. signed, " + name + "'s " +  fam + ".")
-
+            alert("Please Excuse " + name + " from " + scclass + " today. Their " + prof + " says they is too " + Adject + " to attend " + place + ". They will return to school in " + time + ". Please send their " + thing + " home with " + person + ", their sister. signed, " + name + "'s " +  fam + ".")
+            //created an alert that has a string that all the variables are added too
         }
 
         </script>
